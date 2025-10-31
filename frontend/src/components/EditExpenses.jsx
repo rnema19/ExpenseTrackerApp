@@ -38,7 +38,7 @@ const EditExpenses = () => {
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
 
-  const API_URL = "http://localhost:3000/expenses"
+  const API_URL = import.meta.env.VITE_EXPENSE_API_URL || "http://localhost:3000/expenses"
 
   // Fetch expense data on component mount
   useEffect(() => {

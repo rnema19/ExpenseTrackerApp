@@ -12,7 +12,7 @@ const Expenses = () => {
   const [filterDate, setFilterDate] = useState('')
   const [searchTitle, setSearchTitle] = useState('')
   const navigate = useNavigate()
-  let API_URL = "http://localhost:3000/expenses"
+  const API_URL = import.meta.env.VITE_EXPENSE_API_URL || "http://localhost:3000/expenses"
 
   const fetchExpenses = async () => {
     try {

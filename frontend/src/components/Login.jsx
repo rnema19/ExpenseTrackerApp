@@ -14,7 +14,7 @@ const Login = ({ onLogin }) => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  const API_URL = "http://localhost:3000/auth"
+  const API_URL = import.meta.env.VITE_AUTH_API_URL || "http://localhost:3000/auth"
 
   const handleInputChange = (e) => {
     const { name, value } = e.target

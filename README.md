@@ -95,8 +95,8 @@ Sidlabs/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/expense-tracker.git
-   cd expense-tracker
+   git clone https://github.com/rnema19/ExpenseTrackerApp.git
+   cd ExpenseTrackerApp
    ```
 
 2. **Backend Setup**
@@ -116,8 +116,8 @@ Sidlabs/
 Create a `.env` file in the `backend` directory:
 
 ```env
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/expense-tracker
-JWT_SECRET=your_jwt_secret_key_here
+MONGODB_URI=Your_MONGODB_URL(from Atlas or locally)
+JWT_SECRET=ANY_SECRET_KEY
 PORT=3000
 ```
 

@@ -14,7 +14,7 @@ const ChartPage = () => {
   const pieChartInstance = useRef(null)
   const barChartInstance = useRef(null)
   
-  const API_URL = "http://localhost:3000/expenses"
+  const API_URL = import.meta.env.VITE_EXPENSE_API_URL || "http://localhost:3000/expenses"
 
   // Fetch expenses on component mount
   useEffect(() => {
